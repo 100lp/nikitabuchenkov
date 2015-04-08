@@ -1,4 +1,8 @@
 body h1 {
+  min-height: 800px;
+  padding: 25px 50px;
+  background: url(background_pattern.png);
+  background-repeat: repeat-x;
   color: green;
 }
 
