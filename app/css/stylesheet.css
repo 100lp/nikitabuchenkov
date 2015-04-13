@@ -1,61 +1,180 @@
 body {
-  min-height: 800px;
-  padding: 25px 50px;
-  background: url(/app/img/background_pattern.png);
-  background-repeat: repeat-x;
-  color: green;
+  background: url(/img/background_pattern.png);
+  background-repeat: repeat;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper, .wrapper__inner, .main-nav__link, .header__inner {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/** HEADER **/
+
+  .header {
+    height: 116px;
+    background: #eff3f7;
+  }
+
+  .header__inner {
+    max-width: 1200px;
+    min-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 100px;
+    /*this item have border-box settings*/
+  }
+
+  .header::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    top: 116px;
+    background: red;
+  }
+
+  .header__logo {
+    display: block;
+    float: left;
+    padding-top: 20px;
+    text-decoration: none;
+  }
+
+  .header__logo:hover {
+    opacity: 0.8;
+  }
+
+  .header__logo img {
+    width: 220px;
+  }
+
+  .header__span {
+    display: block;
+    color: grey;
+  }
+
+  /** SOCIAL ICONS **/
+
+    .social-icons {
+      float: right;
+      margin-top: 14px;
+    }
+    .social-icons__item {
+      display: inline-block;
+      margin-left: 22px;
+    }
+    .vk, .fb, .tw, .gh {
+        background-image: url(/img/icons_social.png);
+        background-repeat: no-repeat;
+        display: block;
+        width: 47px;
+        height: 47px;
+        line-height: 0;
+        font-size: 0;
+        color: transparent;
+    }
+    .vk { background-position: -50px -50px; }
+    .fb { background-position: -197px -50px; }
+    .gh { background-position: -344px -50px; }
+    .tw { background-position: -491px -50px; }
+    .vk:hover { background-position: -638px -50px; }
+    .fb:hover { background-position: -785px -50px;; }
+    .gh:hover { background-position: -932px -50px; }
+    .tw:hover { background-position: -1079px -50px; }
+
+  /** END SOCIAL ICONS **/
+
+/** END HEADER **/
+
+
+.wrapper {
+  max-width: 1200px;
+  min-width: 600px;
+  margin: 0 auto;
+  padding: 40px 100px;
+  /*this item have border-box settings*/
+}
+
+.wrapper__inner {
+  padding: 0 120px;
+  /*this item have border-box settings*/
+}
+
+/** MAIN NAV **/
+
+  .main-nav { float: left; margin-right: 60px; }
+
+  .main-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 250px;
+    background: #eff3f7;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+  }
+
+  .main-nav__item {
+    height: 73px;
+  }
+
+  .main-nav__item:hover {
+    background: #3ba8c0;
+    border-radius: inherit;
+  }
+
+  .main-nav__item:hover .main-nav__link {
+    color: white;
+  }
+
+  .main-nav__link {
+    font-family: 'fira_sansbook';
+    display: inline-block;
+    color: #3ba8c0;
+    font-size: 21px;
+    padding: 30px;
+    width: 100%;
+    line-height: 12px;
+    text-decoration: none;
+    text-align: left;
+    /*this item have border-box settings*/
+  }
+
+/** END MAIN NAV **/
+
+
+/** CONTENT **/
+
+  .content { float: left; min-width: 400px; }
+
+  .content__section {
+    background: #eff3f7;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin-bottom: 24px;
+  }
+
+  .content__title {
+    padding: 20px 24px;
+    border-bottom: 2px solid #3ba8c0;
+    font-size: 27px;
+    color: #3ba8c0;
+    font-family: 'fira_sansbook';
+  }
+
+/** END CONTENT **/
 .sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
 
-.sprite-fb {
-    width: 47px;
-    height: 47px;
-    background-position: -5px -5px;
-}
-
-.sprite-fb_hover {
-    width: 47px;
-    height: 47px;
-    background-position: -62px -5px;
-}
-
-.sprite-gh {
-    width: 47px;
-    height: 47px;
-    background-position: -119px -5px;
-}
-
-.sprite-gh_hover {
-    width: 47px;
-    height: 47px;
-    background-position: -176px -5px;
-}
-
-.sprite-tw {
-    width: 47px;
-    height: 47px;
-    background-position: -233px -5px;
-}
-
-.sprite-tw_hover {
-    width: 47px;
-    height: 47px;
-    background-position: -290px -5px;
-}
-
-.sprite-vk {
-    width: 47px;
-    height: 47px;
-    background-position: -347px -5px;
-}
-
-.sprite-vk_hover {
-    width: 47px;
-    height: 47px;
-    background-position: -404px -5px;
-}
