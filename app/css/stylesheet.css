@@ -1,5 +1,5 @@
 body {
-  background: url(/img/background_pattern.png);
+  background: url(../img/background_pattern.png);
   background-repeat: repeat;
 }
 
@@ -27,7 +27,6 @@ ul {
     min-width: 600px;
     height: 100%;
     margin: 0 auto;
-    padding: 0 100px;
     /*this item have border-box settings*/
   }
 
@@ -71,7 +70,7 @@ ul {
       margin-left: 22px;
     }
     .vk, .fb, .tw, .gh {
-        background-image: url(/img/icons_social.png);
+        background-image: url(../img/icons_social.png);
         background-repeat: no-repeat;
         display: block;
         width: 47px;
@@ -98,12 +97,13 @@ ul {
   max-width: 1200px;
   min-width: 600px;
   margin: 0 auto;
-  padding: 40px 100px;
+  padding: 40px 0;
   /*this item have border-box settings*/
 }
 
 .wrapper__inner {
   padding: 0 120px;
+  min-width: 960px;
   /*this item have border-box settings*/
 }
 
@@ -161,6 +161,8 @@ ul {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     margin-bottom: 24px;
+    min-width: 400px;
+    max-width: 650px;
   }
 
   .content__title {
@@ -169,6 +171,7 @@ ul {
     font-size: 27px;
     color: #3ba8c0;
     font-family: 'fira_sansbook';
+    display: inline-block;
   }
 
 /** END CONTENT **/

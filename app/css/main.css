@@ -178,10 +178,19 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
+@media only screen and (max-width: 1200px) {
+ .header__inner { padding: 0 40px !important; }
+ .wrapper__inner { padding: 0px 40px !important; }
+ .main-nav { margin-right: 30px !important; }
+ .content { min-width: 0px !important; }
+}
+
 @media only screen and (max-width: 960px) {
   .header__inner { padding: 0 10px !important; }
   .wrapper { padding: 40px 0px !important; }
   .wrapper__inner { padding: 0px 40px !important; }
+  .main-nav { margin-right: 30px !important; }
+  .content { min-width: 0px !important; }
 }
 
 @media only screen and (min-width: 35em) {
