@@ -25,7 +25,7 @@
           <div class="header__inner clearfix">
             <a href="/" class="header__logo">
               <img src="../img/logo_header.png" alt="Никита Бученков" />
-              <span class="header__span">портфолио</span>
+              <span class="header__span"></span>
             </a>
             <ul class="social-icons">
               <li class="social-icons__item">
@@ -49,7 +49,7 @@
             <nav class="main-nav">
               <ul class="main-nav__list">
                 <li class="main-nav__item">
-                  <a href="" class="main-nav__link">Обо мне</a>
+                  <a href="" class="main-nav__link active">Обо мне</a>
                 </li>
                 <li class="main-nav__item">
                   <a href="" class="main-nav__link">Мои работы</a>
@@ -59,25 +59,32 @@
                 </li>
               </ul>
               <aside class="contacts">
-                <ul class="contacts__list">
-                  <li class="contacts__item"></li>
-                  <li class="contacts__item"></li>
-                  <li class="contacts__item"></li>
+                <span class="contacts__title">Контакты</span>
+                <div class="contacts__list">
+                  <a href="#" class="contacts__item email">
+                    <span class="contacts__span">spb.gurme@gmail.com</span>
+                  </a>
+                  <a href="#" class="contacts__item tel">
+                    <span class="contacts__span">+79062768801</span>
+                  </a>
+                  <a href="#" class="contacts__item skype">
+                    <span class="contacts__span">nikita100lp</span>
+                  </a>
                 </ul>
               </aside>
             </nav>
             <div class="content">
               <section class="content__section">
                 <span class="content__title">Основная информация</span>
-                <div class="content__inner">
-                  <img src="my-photo.png" alt="Моя фотография">
+                <div class="content__inner clearfix">
+                  <img class="my-photo" src="../img/my-photo.jpg" alt="Моя фотография">
                   <ul class="my-info">
                     <li class="my-info__item">
                       <span class="my-info__name">Меня зовут:</span>
                       <span class="my-info__field">Никита Бученков</span>
                     </li>
                     <li class="my-info__item">
-                      <span class="my-info__name">Мой возраст</span>
+                      <span class="my-info__name">Мой возраст:</span>
                       <span class="my-info__field">28 лет</span>
                     </li>
                     <li class="my-info__item">
@@ -107,8 +114,14 @@
                 <span class="content__title">Опыт работы</span>
                 <div class="content__inner">
                   <ul class="content__list">
-                    <li class="content__item">text</li>
-                    <li class="content__item">text</li>
+                    <li class="content__item work">
+                      <p class="content__name">Фриланс - разработка сайтов на Joomla</p>
+                      <p class="content__field">С 2009 по 2012</p>
+                    </li>
+                    <li class="content__item work">
+                      <p class="content__name">Фриланс - разработка сайтов на Ruby On Rails</p>
+                      <p class="content__field">С 2012 по 2015</p>
+                    </li>
                   </ul>
                 </div>
               </section>
@@ -116,8 +129,14 @@
                 <span class="content__title">Образование</span>
                 <div class="content__inner">
                   <ul class="content__list">
-                    <li class="content__item">text</li>
-                    <li class="content__item">text</li>
+                    <li class="content__item education">
+                      <p class="content__name">Онлайн курсы (без преподавателей)</p>
+                      <p class="content__field">Railstutorial, Codecademy, Codeschool, Railscasts, Teamtreehouse, RubyMonk, Loftblog</p>
+                    </li>
+                    <li class="content__item education">
+                      <p class="content__name">Оффлайн курсы (с преподавателями)</p>
+                      <p class="content__field">Epixx.ru, Loftschool.ru</p>
+                    </li>
                   </ul>
                 </div>
               </section>
@@ -125,7 +144,14 @@
           </div>
         </div>
 
-
+        <footer class="footer clearfix">
+          <div class="footer__inner">
+            <a href="#" class="footer__login">
+              Log In
+            </a>
+            <p class="footer__copyright">© 2015. Этой мой сайт, пожалуйста, копируйте его, если хотите :) <br>Но не забывайте перепроверять принцип работы.</p>
+          </div>
+        </footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
