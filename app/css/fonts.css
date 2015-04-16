@@ -29,6 +29,16 @@
 }
 
 @font-face {
+  font-family: 'fira_sanslight_italic';
+  src: url('/fonts/firasans-lightitalic.eot');
+  src: url('/fonts/firasans-lightitalic.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/firasans-lightitalic.woff') format('woff'),
+       url('/fonts/firasans-lightitalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'proxima_nova_condensedSBd';
   src: url('/fonts/proximanovacond-semibold-webfont.eot');
   src: url('/fonts/proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -41,8 +51,6 @@
 }
 
 
-
-
 /*@font-face {
     font-family: 'fira_sanstwo';
     src: url('firasans-two.eot');
@@ -51,6 +59,16 @@
          url('firasans-two.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+  font-family: 'fira_sansultralight_italic';
+  src: url('firasans-ultralightitalic.eot');
+  src: url('firasans-ultralightitalic.eot?#iefix') format('embedded-opentype'),
+       url('firasans-ultralightitalic.woff') format('woff'),
+       url('firasans-ultralightitalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -133,15 +151,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'fira_sansultralight_italic';
-    src: url('firasans-ultralightitalic.eot');
-    src: url('firasans-ultralightitalic.eot?#iefix') format('embedded-opentype'),
-         url('firasans-ultralightitalic.woff') format('woff'),
-         url('firasans-ultralightitalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'fira_sansextralight';
@@ -163,16 +172,6 @@
     font-style: normal;
 }
 
-
-@font-face {
-    font-family: 'fira_sanslight_italic';
-    src: url('firasans-lightitalic.eot');
-    src: url('firasans-lightitalic.eot?#iefix') format('embedded-opentype'),
-         url('firasans-lightitalic.woff') format('woff'),
-         url('firasans-lightitalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'fira_sansbook_italic';
