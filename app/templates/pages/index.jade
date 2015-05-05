@@ -1,0 +1,58 @@
+extends ../layouts/main_layout.jade
+
+block link
+  -var selected = 'Обо мне';
+
+block title
+  title Никита Бученков
+
+block content
+  .content
+    section.content__section
+      span.content__title Основная информация
+      .content__inner.clearfix
+        img.my-photo(alt="Моя фотография", src="../img/my-photo.jpg")
+        ul.my-info
+          li.my-info__item
+            span.my-info__name Меня зовут:
+            span.my-info__field Никита Бученков
+          li.my-info__item
+            span.my-info__name Мой возраст:
+            span.my-info__field 28 лет
+          li.my-info__item
+            span.my-info__name Мой город:
+            span.my-info__field Санкт-Петербург
+          li.my-info__item
+            span.my-info__name Моя специализация:
+            span.my-info__field Front-End разработчик
+          li.my-info__item
+            span.my-info__name Ключевые навыки:
+            span.my-info__field
+              ul.my-skills
+                li.my-skills__item html
+                li.my-skills__item css
+                li.my-skills__item sass
+                li.my-skills__item haml
+                li.my-skills__item photoshop
+
+    section.content__section
+      span.content__title Опыт работы
+      .content__inner
+        ul.content__list
+          li.content__item.work
+            p.content__name Фриланс - разработка сайтов на Joomla
+            p.content__field С 2009 по 2012
+          li.content__item.work
+            p.content__name Фриланс - разработка сайтов на Ruby On Rails
+            p.content__field С 2012 по 2015
+
+    section.content__section
+      span.content__title Образование
+      .content__inner
+        ul.content__list
+          li.content__item.education
+            p.content__name Онлайн курсы (без преподавателей)
+            p.content__field Railstutorial, Codecademy, Codeschool, Railscasts, Teamtreehouse, RubyMonk, Loftblog
+          li.content__item.education
+            p.content__name Оффлайн курсы (с преподавателями)
+            p.content__field Epixx.ru, Loftschool.ru

@@ -1,0 +1,56 @@
+extends ../layouts/main_layout.jade
+
+block link
+  -var selected = 'Мои работы';
+
+block title
+  title Мои работы
+
+block content
+  .content__wrapper
+    .content__title Мои работы
+    .content__inner--layout.clearfix
+
+      .example
+        .example__img-wrapper
+          img.example__img(alt="", src="../img/image_01.png")
+          a.example__hover-wrapper(href="#")
+            span.example__hover-button link text
+        a.example__link(href="") www.link.ru)
+        .example__text Text text text text text.
+
+      .example
+        .example__img-wrapper
+          img.example__img(alt="", src="../img/image_02.png")
+          a.example__hover-wrapper(href="#")
+            span.example__hover-button link text
+        a.example__link(href="") www.link.ru
+        .example__text Text text text text text.Text text text text text.
+
+      .example
+        .example__img-wrapper
+          img.example__img(alt="", src="../img/image_03.png")
+          a.example__hover-wrapper(href="#")
+            span.example__hover-button link text
+        a.example__link(href="") www.link.ru
+        .example__text Text text text text text
+
+      .example
+        .example__img-wrapper
+          img.example__img(alt="", src="../img/image_04.png")
+          a.example__hover-wrapper(href="#")
+            span.example__hover-button link text
+        a.example__link(href="") www.link.ru
+        .example__text Text text text text text Text text text text text text text.
+
+      .example
+        .example__img-wrapper
+          img.example__img(alt="" src="../img/image_04.png")
+          a.example__hover-wrapper(href="#")
+            span.example__hover-button link text
+        a.example__link(href="") www.link.ru
+        .example__text Text text text text text. Text text text text text text text.
+
+      .example.add-new Добавить проект
+
+

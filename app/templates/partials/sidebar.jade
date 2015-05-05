@@ -1,0 +1,20 @@
+block link
+-var menu = { 'Обо мне': '/', 'Мои работы': '/works.html', 'Связаться со мной': '/feedback.html'};
+nav.main-nav
+  ul.main-nav__list
+    each val, key in menu
+      if selected === key
+        li.main-nav__item
+          a.main-nav__link.active(href=val)= key
+      else
+        li.main-nav__item
+          a.main-nav__link(href=val)= key
+  aside.contacts
+    span.contacts__title Контакты
+    .contacts__list
+      a.contacts__item.email(href="#")
+        span.contacts__span spb.gurme@gmail.com
+      a.contacts__item.tel(href="#")
+        span.contacts__span +79062768801
+      a.contacts__item.skype(href="#")
+        span.contacts__span nikita100lp
