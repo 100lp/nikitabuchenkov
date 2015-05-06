@@ -383,14 +383,14 @@ body {
 
 .my-info {
   float: left;
-  margin-left: 25px; }
+  margin-left: 25px;
+  max-width: 365px; }
 
 .my-info__item {
   margin-bottom: 15px; }
-  .my-info__item:last-child span {
+  .my-info__item > div {
     display: inline-block;
-    vertical-align: top;
-    max-width: 195px; }
+    vertical-align: top; }
 
 .my-info__name {
   color: #4a545d;
@@ -401,7 +401,8 @@ body {
   color: #37424d;
   font-family: 'fira_sansbook', sans-serif;
   font-size: 15px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  max-width: 180px; }
 
 .my-skills__item {
   background: #2e8ca2;
