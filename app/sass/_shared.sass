@@ -1,3 +1,36 @@
+// FONTS
+$fira-sansbook: 'fira_sansbook', Arial, sans-serif
+
+// COLORS
+$blue-darkest: #3ba8c0
+$blue-dark: #41b9d4
+$blue: #48cbe8
+$blue-light: #51daf8
+$blue-lightest: #edf8fc
+
+// ITEMS
+.feedback-title
+  background: $blue
+  position: relative
+  height: 122px
+  width: 650px
+  display: table-cell
+  vertical-align: middle
+  text-align: center
+  color: white
+  font-family: $fira-sansbook
+  font-size: 27px
+  // this item have border-box settings
+
+  &:before
+    content: ""
+    position: absolute
+    height: 16px
+    bottom: -16px
+    left: 0
+    width: 100%
+    background: $blue-light
+
 // FIX FOOTER for body
 %footer-fix
   min-height:100%

@@ -32,6 +32,7 @@ body
 
 .content__wrapper
   float: left
+  overflow: hidden
   min-width: 400px
   min-height: 840px
   background: #eff3f7
@@ -108,13 +109,10 @@ body
   width: 150px
   float: left
   position: relative
-  -webkit-border-radius: 50%
-  -moz-border-radius: 50%
   border-radius: 50%
   opacity: 0.8
-  -webkit-box-shadow: 0 0 0 3px #33a7bd, 0 0px 2px 4px rgba(145, 205, 218, 0.4)
-  -moz-box-shadow: 0 0 0 3px #33a7bd, 0 0px 2px 4px rgba(145, 205, 218, 0.4)
   box-shadow: 0 0 0 3px #33a7bd, 0 0px 2px 4px rgba(145, 205, 218, 0.4)
+
   &:hover
     opacity: 1
 
@@ -137,7 +135,7 @@ body
 
 .my-info__field
   color: #37424d
-  font-family: 'fira_sansbook', sans-serif
+  font-family: $fira-sansbook
   font-size: 15px
   padding-left: 10px
   max-width: 180px
@@ -152,8 +150,6 @@ body
   color: white
   font-size: 14px
   border-radius: 2px
-  -moz-border-radius: 2px
-  -webkit-border-radius: 2px
   font-family: 'proxima_nova_condensedSBd'
   // background gradient
   background: #3ba8c0
