@@ -1,0 +1,28 @@
+.header
+  height: 116px
+  background: #eff3f7
+
+.header__inner
+  max-width: 1200px
+  min-width: 600px
+  height: 100%
+  margin: 0 auto
+  // this item have border-box setting
+
+.header::after
+  @extend %blue-line
+  top: 116px
+
+.header__logo
+  display: block
+  float: left
+  padding-top: 30px
+  text-decoration: none
+  &:hover
+    opacity: 0.8
+  img
+    width: 220px
+
+.header__span
+  display: block
+  color: grey

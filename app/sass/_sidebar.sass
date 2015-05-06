@@ -1,0 +1,130 @@
+// MAIN NAV
+.main-nav
+  float: left
+  margin-right: 60px
+
+.main-nav__list
+  margin: 0
+  padding: 0
+  list-style: none
+  width: 250px
+  background: #eff3f7
+  border-radius: 4px
+  -moz-border-radius: 4px
+  -webkit-border-radius: 4px
+  overflow: hidden
+
+.main-nav__item
+  height: 73px
+  &:hover .main-nav__link
+    color: #3ba8c0
+
+.main-nav__link:before
+  content: ""
+  height: 2px
+  width: 230px
+  background: #3ba8c0
+  top: 0
+  left: 9px
+  position: absolute
+
+.main-nav__item:first-child .main-nav__link:before
+  height: 0
+
+.main-nav__link
+  font-family: 'fira_sansbook', sans-serif
+  display: inline-block
+  color: #959aa8
+  font-size: 21px
+  padding: 32px 30px
+  width: 100%
+  line-height: 12px
+  text-decoration: none
+  text-align: left
+  position: relative
+  // this item have border-box settings
+  &.active
+    background: #3ba8c0
+    color: white
+    border-radius: inherit
+    &:hover
+      color: white
+      cursor: default
+
+
+// CONTACTS
+.contacts
+  width: 250px
+  margin-top: 25px
+  background: #eff3f7
+  color: white
+  border-radius: 4px
+  -moz-border-radius: 4px
+  -webkit-border-radius: 4px
+  font-family: 'fira_sansbook', sans-serif
+  overflow: hidden
+
+.contacts__title
+  background: #3ba8c0
+  display: block
+  padding: 12px 20px 8px 20px
+  line-height: 20px
+  font-size: 21px
+
+.contacts__item
+  padding: 14px 0 14px 52px
+  line-height: 16px
+  height: 40px
+  display: block
+  text-decoration: none
+  color: white
+  position: relative
+  font-size: 17px
+  // this item have border-box settings
+
+.contacts__span
+  line-height: 16px
+  display: inline-block
+
+.contacts__item
+  &:hover .contacts__span
+    border-bottom: 1px solid #c6eff8
+    opacity: 0.8
+  &.email
+    background: #41b9d4
+    &:before
+      content: ""
+      height: 42px
+      width: 50px
+      top: 0
+      left: 0
+      position: absolute
+      background-image: url(../img/spritesheet.png)
+      background-repeat: no-repeat
+      background-position: -574px -38px
+  &.tel
+    background: #48cbe8
+    &:before
+      content: ""
+      height: 42px
+      width: 50px
+      top: 0
+      left: 0
+      position: absolute
+      background-image: url(../img/spritesheet.png)
+      background-repeat: no-repeat
+      background-position: -948px -40px
+  &.skype
+    background: #51daf8
+    &:before
+      content: ""
+      height: 42px
+      width: 50px
+      top: 0
+      left: 0
+      position: absolute
+      background-image: url(../img/spritesheet.png)
+      background-repeat: no-repeat
+      background-position: -827px -40px
+  &.email:hover:before, &.tel:hover:before, &.skype:hover:before
+    opacity: 0.8

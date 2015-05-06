@@ -18,27 +18,34 @@ gulp.task('connect', function() {
 });
 
 
-// Компилируем Jade в html
+// Компиляция Jade в html
 gulp.task('jade', function() {
   gulp.src('app/templates/pages/*.jade')
     .pipe(jade())
     .on('error', log)
     .pipe(prettify({indent_size: 2}))
     .pipe(gulp.dest('app/'))
-    .pipe(connect.reload())
-    .pipe(reload({stream: true}));
+    .pipe(connect.reload());
+});
+
+
+// Компилиция Sass в CSS
+gulp.task('sass', function () {
+  gulp.src('./app/sass/*.sass')
+    .pipe(sass({
+      indentedSyntax: true,
+      lineNumbers: true
+    }))
+    .pipe(autoprefixer({
+      browsers: ['last 15 versions', 'ie 8', 'ie 9']
+    }))
+    .pipe(gulp.dest('./app/css'))
 });
 
 
 // Работа с CSS
 gulp.task('css', function () {
-  gulp.src('./app/sass/*.sass')
-    .pipe(sass({indentedSyntax: true}))
-    .pipe(autoprefixer({
-      browsers: ['last 15 versions', 'ie 8', 'ie 9']
-    }))
-    .pipe(rename('bundle.css'))
-    .pipe(gulp.dest('./app/css'))
+  gulp.src('./app/css/*.css')
     .pipe(connect.reload());
 });
 
@@ -54,7 +61,8 @@ gulp.task('js', function () {
 gulp.task('watch', function () {
   gulp.watch(['./app/**/*.jade'], ['jade']);
   gulp.watch(['./app/js/*.js'], ['js']);
-  gulp.watch(['./app/sass/*.sass'], ['css']);
+  gulp.watch(['./app/sass/*.sass'], ['sass']);
+  gulp.watch(['./app/css/*.css'], ['css']);
 });
 
 
@@ -62,7 +70,7 @@ gulp.task('watch', function () {
 gulp.task('default', ['connect', 'watch']);
 
 
-// Более наглядный вывод ошибок
+// Вывод ошибок
 var log = function (error) {
   console.log([
     '',

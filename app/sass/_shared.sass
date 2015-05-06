@@ -1,0 +1,65 @@
+// BLUE LINE placeholder
+%blue-line
+  content: ""
+  position: absolute
+  height: 3px
+  width: 100%
+  background: white
+  background: -moz-linear-gradient(left, #ffffff -5%, #1b6479 50%, #ffffff 105%)
+  background: -webkit-gradient(left top, right top, color-stop(-5%, #ffffff), color-stop(50%, #1b6479), color-stop(105%, #ffffff))
+  background: -webkit-linear-gradient(left, #ffffff -5%, #1b6479 50%, #ffffff 105%)
+  background: -o-linear-gradient(left, #ffffff -5%, #1b6479 50%, #ffffff 105%)
+  background: -ms-linear-gradient(left, #ffffff -5%, #1b6479 50%, #ffffff 105%)
+  background: linear-gradient(to right, #ffffff -5%, #1b6479 50%, #ffffff 105%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 )
+
+// BORDER BOX
+.wrapper, .wrapper__inner, .main-nav__link, .header__inner, .content__inner, .footer__inner, .contacts__item, .content__inner--layout, .add-new
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+
+// SOCIAL ICONS
+.social-icons
+  float: right
+  margin-top: 14px
+
+.social-icons__item
+  display: inline-block
+  margin-left: 22px
+  &:first-child
+    margin: 0
+
+.vk, .fb, .tw, .gh
+  background-image: url(../img/icons_social.png)
+  background-repeat: no-repeat
+  display: block
+  width: 47px
+  height: 47px
+  line-height: 0
+  font-size: 0
+  color: transparent
+
+.vk
+  background-position: -50px -50px
+
+.fb
+  background-position: -197px -50px
+
+.gh
+  background-position: -344px -50px
+
+.tw
+  background-position: -491px -50px
+
+.vk:hover
+  background-position: -638px -50px
+
+.fb:hover
+  background-position: -785px -50px
+
+.gh:hover
+  background-position: -932px -50px
+
+.tw:hover
+  background-position: -1079px -50px
