@@ -13,10 +13,6 @@ html {
   line-height: 1.4;
   height: 100%; }
 
-body {
-  background: url(../img/background_pattern.png);
-  background-repeat: repeat; }
-
 ul {
   list-style: none;
   margin: 0;

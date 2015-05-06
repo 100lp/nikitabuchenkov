@@ -42,8 +42,8 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./app/css'))
 });
 
-
-// Работа с CSS
+// reload when CSS
+// оставил так как еще не до конца избавился от css
 gulp.task('css', function () {
   gulp.src('./app/css/*.css')
     .pipe(connect.reload());

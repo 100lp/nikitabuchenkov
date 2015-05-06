@@ -3,11 +3,18 @@
 @import "shared"
 @import "sidebar"
 
+body
+  background: url(../img/background_pattern.png)
+  background-repeat: repeat
+  @extend %footer-fix
+
 .wrapper
   max-width: 1200px
   min-width: 600px
   margin: 0 auto
   padding: 40px 0
+  // fix footer
+  padding-bottom: 78px
   // this item have border-box settings
 
 .wrapper__inner
@@ -21,6 +28,7 @@
   float: left
   min-width: 400px
   min-height: 840px
+  margin-bottom: 50px
 
 .content__wrapper
   float: left
@@ -28,17 +36,17 @@
   min-height: 840px
   background: #eff3f7
   border-radius: 4px
-  -moz-border-radius: 4px
-  -webkit-border-radius: 4px
+  margin-bottom: 50px
 
 .content__section
   background: #eff3f7
   border-radius: 4px
-  -moz-border-radius: 4px
-  -webkit-border-radius: 4px
   margin-bottom: 24px
   min-width: 400px
   max-width: 650px
+
+  &:last-child
+    margin-bottom: 0
 
 .content__title
   padding: 20px 24px

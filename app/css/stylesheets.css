@@ -28,7 +28,10 @@
 .footer {
   height: 76px;
   background: #eff3f7;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
   text-align: center; }
   .footer::after {
     bottom: 76px; }
@@ -74,6 +77,10 @@
   width: 20px;
   height: 32px;
   background-position: -476px -50px; }
+
+body {
+  min-height: 100%;
+  position: relative; }
 
 .header::after, .footer::after {
   content: "";
@@ -139,7 +146,8 @@
 
 .main-nav {
   float: left;
-  margin-right: 60px; }
+  margin-right: 60px;
+  margin-bottom: 50px; }
 
 .main-nav__list {
   margin: 0;
@@ -267,11 +275,16 @@
 .contacts__item.email:hover:before, .contacts__item.tel:hover:before, .contacts__item.skype:hover:before {
   opacity: 0.8; }
 
+body {
+  background: url(../img/background_pattern.png);
+  background-repeat: repeat; }
+
 .wrapper {
   max-width: 1200px;
   min-width: 600px;
   margin: 0 auto;
-  padding: 40px 0; }
+  padding: 40px 0;
+  padding-bottom: 78px; }
 
 .wrapper__inner {
   padding: 0 120px;
@@ -280,25 +293,27 @@
 .content {
   float: left;
   min-width: 400px;
-  min-height: 840px; }
+  min-height: 840px;
+  margin-bottom: 50px; }
 
 .content__wrapper {
   float: left;
   min-width: 400px;
   min-height: 840px;
   background: #eff3f7;
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px; }
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  margin-bottom: 50px; }
 
 .content__section {
   background: #eff3f7;
-  border-radius: 4px;
-  -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
+          border-radius: 4px;
   margin-bottom: 24px;
   min-width: 400px;
   max-width: 650px; }
+  .content__section:last-child {
+    margin-bottom: 0; }
 
 .content__title {
   padding: 20px 24px;
