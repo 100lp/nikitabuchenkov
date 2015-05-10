@@ -1,0 +1,89 @@
+//- .server-mes--error
+//- .server-mes--success
+
+.feedback-title
+  @extend %blue-header
+
+.contact-form
+  width: 400px
+  margin: 25px auto
+
+  > div
+    margin-bottom: 18px
+
+.contact-form__row.clearfix
+
+.contact-form__group
+  float: left
+
+  &:nth-child(2)
+    float: right
+
+.label
+  display: block
+  color: $gray-text
+  font-family: $fira-sanslight
+  font-size: 19px
+
+.input
+  height: 40px
+  width: 190px
+
+  &.small
+    height: 30px
+
+.textarea
+  width: 100%
+
+.input, .textarea
+  border: 1px solid $blue
+  border-radius: 4px
+  padding: 15px 10px
+  outline: none
+  background: #fbfcfd
+  color: #4a545d
+  font-family: $fira-sanslight
+  font-size: 15px
+  // this item have border-box settings
+
+  &::placeholder, &::-webkit-input-placeholder
+    font-size: 14px
+    color: $blue
+    opacity: 1
+    transition: opacity 0.4s ease
+    text-overflow: ellipsis
+
+  &:focus::placeholder
+    opacity: 0
+    transition: opacity 0.4s ease
+
+
+.contact-form__textarea
+
+.contact-form__captcha.clearfix
+  .contact-form__captcha-box
+    float: left
+    height: 80px
+    width: 190px
+    background: white
+    border: 1px solid $blue
+    border-radius: 4px
+    text-align: center
+
+    .img-align-helper
+      display: inline-block
+      height: 100%
+      vertical-align: middle
+
+    .contact-form__captcha-img
+      vertical-align: middle
+
+  .input
+    float: right
+    margin-top: 20px
+
+.contact-form__buttons
+  .btn--blue
+    float: left
+  .btn--gray
+    float: right

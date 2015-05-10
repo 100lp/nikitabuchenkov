@@ -44,7 +44,33 @@
         </nav>
         <div class="content__wrapper">
           <div class="feedback-title">У Вас интересный проект? Напишите мне</div>
-          <div class="content__inner--layout clearfix">скоро сверстаю )</div>
+          <div class="content__inner--layout clearfix">
+            <form action="ajax.php" class="contact-form">
+              <div class="contact-form__row clearfix">
+                <div class="contact-form__group">
+                  <label for="name" class="label">Имя</label>
+                  <input type="text" name="name" placeholder="Как к вам обращаться" qtip-content="Вы не ввели имя" class="input">
+                </div>
+                <div class="contact-form__group">
+                  <label for="email" class="label">Email</label>
+                  <input type="text" name="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email" class="input">
+                </div>
+              </div>
+              <div class="contact-form__textarea">
+                <label for="message" class="label">Сообщение</label>
+                <textarea id="message" name="message" rows="3" placeholder="Кратко в чем суть" qtip-content="Что вы от меня хотите?" class="textarea"></textarea>
+              </div>
+              <div class="contact-form__captcha clearfix">
+                <label for="captcha" class="label">Введите код, указанный на картинке</label>
+                <div class="contact-form__captcha-box"><span class="img-align-helper"></span><img src="img/captcha.png" alt="код" class="contact-form__captcha-img"></div>
+                <input type="text" name="captcha" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код" class="input small">
+              </div>
+              <div class="contact-form__buttons clearfix">
+                <button type="submit" class="btn btn--blue">Отправить</button>
+                <button type="reset" class="btn btn--gray">Очистить</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
