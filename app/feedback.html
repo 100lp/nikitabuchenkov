@@ -45,7 +45,7 @@
         <div class="content__wrapper">
           <div class="feedback-title">У Вас интересный проект? Напишите мне</div>
           <div class="content__inner--layout clearfix">
-            <form action="ajax.php" class="contact-form">
+            <form id="contact-form">
               <div class="contact-form__row clearfix">
                 <div class="contact-form__group">
                   <label for="name" class="label">Имя</label>
@@ -53,7 +53,7 @@
                 </div>
                 <div class="contact-form__group">
                   <label for="email" class="label">Email</label>
-                  <input type="text" name="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email" class="input">
+                  <input type="email" name="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email" class="input">
                 </div>
               </div>
               <div class="contact-form__textarea">
@@ -79,12 +79,8 @@
         <p class="footer__copyright">© 2015. Этой мой сайт, пожалуйста, копируйте его, если хотите :)</p>
       </div>
     </footer>
-    <script>
-      src = "js/plugins.js"
-    </script>
-    <script>
-      src = "js/main.js"
-    </script>
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 
 </html>

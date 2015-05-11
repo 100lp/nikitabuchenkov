@@ -10,7 +10,7 @@ block content
   .content__wrapper
     .feedback-title У Вас интересный проект? Напишите мне
     .content__inner--layout.clearfix
-      form.contact-form(action='ajax.php')
+      form#contact-form
         //- .server-mes--error
         //- .server-mes--success
         .contact-form__row.clearfix
@@ -19,7 +19,7 @@ block content
             input.input(type='text', name='name', placeholder='Как к вам обращаться', qtip-content='Вы не ввели имя')
           .contact-form__group
             label.label(for='email') Email
-            input.input(type='text', name='email', placeholder='Куда мне писать', qtip-position='right', qtip-content='Вы не ввели email')
+            input.input(type='email', name='email', placeholder='Куда мне писать', qtip-position='right', qtip-content='Вы не ввели email')
         .contact-form__textarea
           label.label(for='message') Сообщение
           textarea#message.textarea(name='message', rows='3', placeholder='Кратко в чем суть', qtip-content='Что вы от меня хотите?')
