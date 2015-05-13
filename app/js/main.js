@@ -1,52 +1,66 @@
-var FormSender = (function(){
+// Модуль валидации
+var contactMe = (function (){
 
-  // Подключаем прослушку событий
-  function _setUpListners(){
-    $('#contact-form').on('submit', _showResult);
-  }
+  var init = function(){
+        console.log('Инициализация модуля contactMe');
+        _setUpListners();
+      },
 
-  // Обработка сабмита формы #contact-form
-  function _showResult(ev){
-    ev.preventDefault();
+      _setUpListners = function () {
+        $('#contact-form').on('submit', _submitForm);
+      },
+      _submitForm = function (e) {
+        console.log('Сабмит формы');
 
-    // var form = $(this),
-    //   url = '/ajax.php',
-    //   defObject = _ajaxForm(form, url);
+        e.preventDefault();
 
-    // defObject.done(function(ans){
-    //   var ul = $('.list');
-    //   for (var item in ans){
-    //     var markup = '<li>' + item + ":" + ans[item] + '</li>';
-    //     ul.append(markup);
-    //   }
-    // })
+        var form = $(this),
+            url = '/ajax.php',
+            defObject = _ajaxForm(form, url);
 
-  }
+        if (defObject) {
+            defObject.done(function(answer) {
+              var message = answer.message,
+                  status = answer.status;
 
-  // Универсальная функция ajax
-  // function _ajaxForm(form, url){
+              if (status === 'OK'){
+                form.trigger('reset');
+                form.find('.success-message').text(message).show();
+              } else {
+                form.find('.error-message').text(message).show();
+              }
 
-  //   var data = form.serialize(),
+            });
+        }
 
-  //     defObj = $.ajax({
-  //       type : "POST",
-  //       url : url,
-  //       dataType : "JSON",
-  //       data: data
-  //     }).fail( function(){
-  //       console.log('Проблемы на стороне сервера');
-  //     })
+      },
+      _ajaxForm = function (form, url) {
 
-  //   return defObj;
-  // }
+        // вовзращает false, если не проходит валидация
+        if (!validation.validateForm(form)) return false;
 
-  // Возвращаем в глобальную область видимости
+        var data = form.serialize();
+
+        return $.ajax({
+
+          type: 'POST',
+          url: url,
+          dataType: 'JSON',
+          data: data
+
+        }).fail( function(answer) {
+            console.log('Проблемы в PHP');
+            form.find('.error-message').text('На сервере произошла ошибка').show();
+        });
+
+
+      };
+
+
   return {
-    init: function () {
-      _setUpListners();
-    }
-  }
+    init: init,
+  };
 
-}());
+})();
 
-FormSender.init();
+contactMe.init();

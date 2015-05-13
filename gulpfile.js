@@ -1,7 +1,7 @@
 var gulp = require("gulp"),
     connect = require("gulp-connect"),
     sass = require('gulp-sass'),
-    rename = require("gulp-rename"),
+    wiredep = require('wiredep').stream,
     autoprefixer = require('gulp-autoprefixer'),
     jade = require('gulp-jade'),
     prettify = require('gulp-prettify')
@@ -15,6 +15,16 @@ gulp.task('connect', function() {
     port: 8888
   });
   opn('http://localhost:8888');
+});
+
+
+// Генерация ссылок bower
+gulp.task('wiredep', function() {
+  gulp.src('app/templates/partials/*.jade')
+    .pipe(wiredep({
+      ignorePath: /^(\.\.\/)*\.\./
+    }))
+    .pipe(gulp.dest('app/templates/partials/'))
 });
 
 
@@ -41,6 +51,7 @@ gulp.task('sass', function () {
     }))
     .pipe(gulp.dest('./app/css'))
 });
+
 
 // reload when CSS
 // оставил так как еще не до конца избавился от css

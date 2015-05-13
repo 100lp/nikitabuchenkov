@@ -15,6 +15,39 @@ $gray-light: #eff3f7
 
 $gray-text: #959aa8
 
+$red: #f97e76
+$red-light: #fad2d1
+
+
+// SYSTEM
+.success-message, .error-message
+  display: none
+  color: green
+  border: 2px solid green
+  font-weight: bold
+  border-radius: 4px
+  padding: 5px 10px
+
+.error-message
+  color: $red
+  border-color: $red
+
+// TOOLTIPS
+.qtip.qtip-mystyle
+  background: $red
+  border-color: $red
+  font-family: $fira-sansbook
+  font-size: 13px
+  color: white
+
+input.has-error, textarea.has-error
+  border-color: $red
+  background: $red-light
+
+  &::placeholder, &::-webkit-input-placeholder
+    color: #8ab4c3
+
+
 // BUTTONS
 .btn
   background: $blue
@@ -106,11 +139,11 @@ $gray-text: #959aa8
 // SOCIAL ICONS
 .social-icons
   float: right
-  margin-top: 14px
+  margin-top: 18px
 
 .social-icons__item
   display: inline-block
-  margin-left: 22px
+  margin-left: 20px
   &:first-child
     margin: 0
 

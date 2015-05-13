@@ -1,7 +1,32 @@
 {
   "name": "dz1",
+  "homepage": "mediaflowers.ru",
+  "authors": [
+    "100lp <spb.gurme@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower",
+    "test",
+    "tests"
+  ],
   "dependencies": {
-    "jquery": "1.11",
-    "normalize.css": "~3.0.3"
+    "magnific-popup": "~1.0.0",
+    "normalize.css": "~3.0.3",
+    "qtip2": "~2.2.1"
+  },
+  "overrides": {
+    "qtip2": {
+      "main": [
+        "./jquery.qtip.js",
+        "./jquery.qtip.css"
+      ],
+      "dependencies": {
+        "jquery": ">=1.6.0"
+      }
+    }
   }
 }
