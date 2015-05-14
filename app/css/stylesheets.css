@@ -23,7 +23,7 @@
 
 .header__span {
   display: block;
-  color: grey; }
+  text-indent: -9999px; }
 
 .footer {
   height: 76px;
@@ -54,7 +54,8 @@
   width: 20px;
   margin: 25px 0 0; }
   .footer__login:hover {
-    opacity: 0.8; }
+    opacity: 0.8;
+    background-position: -1066px -50px; }
 
 .footer__copyright {
   margin: 0;
@@ -221,6 +222,9 @@ body {
   float: left;
   margin-bottom: 50px; }
 
+.main-nav {
+  margin-bottom: 25px; }
+
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -271,7 +275,7 @@ body {
 
 .contacts {
   width: 250px;
-  margin-top: 25px;
+  bottom-top: 25px;
   background: #eff3f7;
   color: white;
   border-radius: 4px;
