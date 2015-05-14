@@ -4,7 +4,7 @@
 
 .header__inner {
   max-width: 1200px;
-  min-width: 600px;
+  min-width: 960px;
   height: 100%;
   margin: 0 auto; }
 
@@ -94,7 +94,7 @@
 .qtip.qtip-mystyle {
   background: #f97e76;
   border-color: #f97e76;
-  font-family: "fira_sansbook", Arial, sans-serif;
+  font-family: 'fira_sansbook', Arial, sans-serif;
   font-size: 13px;
   color: white; }
 
@@ -112,7 +112,7 @@ input.has-error, textarea.has-error {
   width: 140px;
   height: 33px;
   line-height: 30px;
-  font-family: "fira_sansbook", Arial, sans-serif;
+  font-family: 'fira_sansbook', Arial, sans-serif;
   font-size: 19px;
   border: none;
   -webkit-border-radius: 4px;
@@ -147,7 +147,7 @@ input.has-error, textarea.has-error {
   vertical-align: middle;
   text-align: center;
   color: white;
-  font-family: "fira_sansbook", Arial, sans-serif;
+  font-family: 'fira_sansbook', Arial, sans-serif;
   font-size: 27px;
   border-bottom: 16px solid #51daf8; }
 
@@ -217,9 +217,8 @@ body {
 .tw:hover {
   background-position: -1079px -50px; }
 
-.main-nav {
+.sidebar {
   float: left;
-  margin-right: 60px;
   margin-bottom: 50px; }
 
 .main-nav__list {
@@ -305,7 +304,6 @@ body {
 .contacts__item:hover .contacts__span {
   border-bottom: 1px solid #c6eff8;
   opacity: 0.8; }
-
 .contacts__item.email {
   background: #41b9d4; }
   .contacts__item.email:before {
@@ -318,7 +316,6 @@ body {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     background-position: -574px -38px; }
-
 .contacts__item.tel {
   background: #48cbe8; }
   .contacts__item.tel:before {
@@ -331,7 +328,6 @@ body {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     background-position: -948px -40px; }
-
 .contacts__item.skype {
   background: #51daf8; }
   .contacts__item.skype:before {
@@ -344,7 +340,6 @@ body {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     background-position: -827px -40px; }
-
 .contacts__item.email:hover:before, .contacts__item.tel:hover:before, .contacts__item.skype:hover:before {
   opacity: 0.8; }
 
@@ -362,7 +357,7 @@ body {
 .label {
   display: block;
   color: #959aa8;
-  font-family: "fira_sanslight", Arial, sans-serif;
+  font-family: 'fira_sanslight', Arial, sans-serif;
   font-size: 19px; }
 
 .input {
@@ -382,7 +377,7 @@ body {
   outline: none;
   background: #fbfcfd;
   color: #4a545d;
-  font-family: "fira_sanslight", Arial, sans-serif;
+  font-family: 'fira_sanslight', Arial, sans-serif;
   font-size: 15px; }
   .input::-webkit-input-placeholder, .input::-webkit-input-placeholder, .textarea::-webkit-input-placeholder, .textarea::-webkit-input-placeholder {
     font-size: 14px;
@@ -429,14 +424,12 @@ body {
     vertical-align: middle; }
   .contact-form__captcha.clearfix .contact-form__captcha-box .contact-form__captcha-img {
     vertical-align: middle; }
-
 .contact-form__captcha.clearfix .input {
   float: right;
   margin-top: 20px; }
 
 .contact-form__buttons .btn--blue {
   float: left; }
-
 .contact-form__buttons .btn--gray {
   float: right; }
 
@@ -452,11 +445,13 @@ body {
   padding-bottom: 78px; }
 
 .wrapper__inner {
-  padding: 0 120px;
-  min-width: 960px; }
+  min-width: 960px;
+  max-width: 970px;
+  padding: 0 5px;
+  margin: 0 auto; }
 
 .content {
-  float: left;
+  float: right;
   min-width: 400px;
   min-height: 840px;
   margin-bottom: 50px; }
@@ -566,7 +561,7 @@ body {
 
 .my-info__field {
   color: #37424d;
-  font-family: "fira_sansbook", Arial, sans-serif;
+  font-family: 'fira_sansbook', Arial, sans-serif;
   font-size: 15px;
   padding-left: 10px;
   max-width: 180px; }

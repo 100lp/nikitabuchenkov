@@ -1,6 +1,7 @@
 block link
 -var menu = { 'Обо мне': '/', 'Мои работы': '/works.html', 'Связаться со мной': '/feedback.html'};
-nav.main-nav
+//- nav.main-nav
+aside.sidebar
   ul.main-nav__list
     each val, key in menu
       if selected === key
@@ -9,7 +10,7 @@ nav.main-nav
       else
         li.main-nav__item
           a.main-nav__link(href=val)= key
-  aside.contacts
+  .contacts
     span.contacts__title Контакты
     .contacts__list
       a.contacts__item.email(href="mailto:spb.gurme@gmail.com")
