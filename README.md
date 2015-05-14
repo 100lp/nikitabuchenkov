@@ -2,14 +2,14 @@
 
 Установка проекта:
 
-1. git clone https://github.com/100lp/nikitabuchenkov.git
+1. git clone https://github.com/100lp/nikitabuchenkov.git__
 (создат папку nikitabuchenkov содержащую мой проект, на Вашем компьютере)
 
-2. npm i
+2. npm i__
 (установит все node плагины от которых зависит работа сайта)
 
-3. bower i
+3. bower i__
 (установит все необходимые библиотеки\плагины от которых зависит работа сайта)
 
-4. gulp
+4. gulp__
 (запускает работу сайта локально, т.е. на Вашем компьютере)
