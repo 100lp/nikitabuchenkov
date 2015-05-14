@@ -138,7 +138,7 @@ input.has-error, textarea.has-error {
     border-top: 2px solid #687b8f;
     border-bottom-color: #849db5; }
 
-.feedback-title {
+.feedback-title, .login-title {
   background: #48cbe8;
   position: relative;
   height: 122px;
@@ -433,6 +433,24 @@ body {
 .contact-form__buttons .btn--gray {
   float: right; }
 
+.login-wrapper {
+  height: 485px;
+  width: 590px;
+  margin: 0 auto;
+  background: #eff3f7;
+  text-align: center; }
+
+.login-title {
+  font-size: 40px; }
+
+#login-form {
+  padding: 25px; }
+  #login-form .label {
+    font-size: 36px; }
+
+.login-form__group {
+  margin-bottom: 20px; }
+
 body {
   background: url(../img/background_pattern.png);
   background-repeat: repeat; }
@@ -457,7 +475,7 @@ body {
   margin-bottom: 50px; }
 
 .content__wrapper {
-  float: left;
+  float: right;
   overflow: hidden;
   min-width: 400px;
   min-height: 840px;
