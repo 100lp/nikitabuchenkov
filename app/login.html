@@ -25,30 +25,39 @@
 <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
 <![endif]-->
     <div class="login-wrapper">
-      <div class="login-title">Авторизуйтесь</div>
-      <form id="login-form">
-        <div class="login-form__group">
-          <label class="label">Логин</label>
-          <input class="input">
-        </div>
-        <div class="login-form__group">
-          <label class="label">Пароль</label>
-          <input class="input">
-        </div>
-      </form>
+      <div class="login-box">
+        <div class="login-title">Авторизируйтесь</div>
+        <form id="login-form">
+          <div class="success-message">Success!</div>
+          <div class="error-message">Error!</div>
+          <div class="login-form__group">
+            <label class="label">Логин</label>
+            <input type="text" name="name" placeholder="Введите логин" qtip-content="Вы не ввели логин" class="input">
+          </div>
+          <div class="login-form__group">
+            <label class="label">Пароль</label>
+            <input type="text" name="name" placeholder="Введите пароль" qtip-content="Вы не ввели пароль" class="input">
+          </div>
+          <div class="button-wrapper">
+            <button class="btn btn--blue">Войти</button>
+          </div>
+        </form>
+      </div>
     </div>
+    <footer class="footer clearfix">
+      <div class="footer__inner"><a href="/login.html" class="footer__login">Log In</a>
+        <p class="footer__copyright">© 2015. Этой мой сайт, пожалуйста, копируйте его, если хотите :)</p>
+      </div>
+    </footer>
+    <!-- bower:js-->
+    <script src="/bower/jquery/dist/jquery.js"></script>
+    <script src="/bower/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="/bower/qtip2/jquery.qtip.js"></script>
+    <!-- endbower-->
+    <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/contact-me.js"></script>
+    <script src="js/login.js"></script>
   </body>
-  <footer class="footer clearfix">
-    <div class="footer__inner"><a href="#" class="footer__login">Log In</a>
-      <p class="footer__copyright">© 2015. Этой мой сайт, пожалуйста, копируйте его, если хотите :)</p>
-    </div>
-  </footer>
-  <!-- bower:js-->
-  <script src="/bower/jquery/dist/jquery.js"></script>
-  <script src="/bower/magnific-popup/dist/jquery.magnific-popup.js"></script>
-  <script src="/bower/qtip2/jquery.qtip.js"></script>
-  <!-- endbower-->
-  <script src="js/main.js"></script>
-  <script src="js/validation.js"></script>
 
 </html>

@@ -5,11 +5,16 @@ block title
 
 block content
   .login-wrapper
-    .login-title Авторизуйтесь
-    form#login-form
-      .login-form__group
-        label.label Логин
-        input.input
-      .login-form__group
-        label.label Пароль
-        input.input
+    .login-box
+      .login-title Авторизируйтесь
+      form#login-form
+        .success-message Success!
+        .error-message Error!
+        .login-form__group
+          label.label Логин
+          input.input(type='text', name='name', placeholder='Введите логин', qtip-content='Вы не ввели логин')
+        .login-form__group
+          label.label Пароль
+          input.input(type='text', name='name', placeholder='Введите пароль', qtip-content='Вы не ввели пароль')
+        .button-wrapper
+          button.btn.btn--blue Войти
