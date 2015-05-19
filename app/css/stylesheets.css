@@ -177,7 +177,7 @@ body {
   background: linear-gradient(to right, #ffffff -5%, #1b6479 50%, #ffffff 105%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 ); }
 
-.input, .textarea, .wrapper, .wrapper__inner, .main-nav__link, .header__inner, .content__inner, .footer__inner, .contacts__item, .content__inner--layout, .add-new {
+.input, .textarea, .wrapper, .wrapper__inner, .main-nav__link, .header__inner, .content__inner, .footer__inner, .contacts__item, .content__inner--layout, .add-new-button {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
@@ -498,6 +498,25 @@ body {
 .login-form__group {
   margin-bottom: 20px; }
 
+.add-new-button {
+  width: 182px;
+  height: 130px;
+  padding-top: 80px;
+  background: #edf8fc;
+  background-image: url(../img/spritesheet.png);
+  background-position: -644px -12px;
+  color: #3ba8c0;
+  border: 1px dashed #3ba8c0;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: 'fira_sanslight', sans-serif;
+  font-weight: bold;
+  outline: none; }
+  .add-new-button:hover {
+    opacity: 0.8;
+    cursor: pointer; }
+
 .white-popup-block {
   padding: 0; }
 
@@ -801,21 +820,3 @@ body {
   font-size: 15px;
   line-height: 20px;
   font-family: 'fira_sanslight', sans-serif; }
-
-.add-new {
-  width: 182px;
-  height: 130px;
-  padding-top: 80px;
-  background: #edf8fc;
-  background-image: url(../img/spritesheet.png);
-  background-position: -644px -12px;
-  color: #3ba8c0;
-  border: 1px dashed #3ba8c0;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  font-size: 13px;
-  font-family: 'fira_sanslight', sans-serif;
-  font-weight: bold; }
-  .add-new:hover {
-    opacity: 0.8;
-    cursor: pointer; }
