@@ -13,6 +13,11 @@ $(document).ready(function() {
         } else {
           this.st.focus = '#name';
         }
+      },
+      close: function () {
+        console.log(this);
+        console.log(this.st);
+        $('#add-project').trigger("reset"); // сбрасываем форму
       }
     }
   });
